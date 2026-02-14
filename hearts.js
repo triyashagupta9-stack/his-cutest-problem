@@ -1,16 +1,17 @@
 function createHeart() {
   const heart = document.createElement("div");
+  heart.classList.add("heart");
   heart.innerHTML = "💖";
-  heart.style.position = "fixed";
+
   heart.style.left = Math.random() * 100 + "vw";
-  heart.style.top = "100vh";
-  heart.style.fontSize = (20 + Math.random() * 20) + "px";
-  heart.style.animation = "floatUp 4s linear forwards";
+  heart.style.fontSize = Math.random() * 20 + 20 + "px";
+  heart.style.animationDuration = Math.random() * 3 + 3 + "s";
+
   document.body.appendChild(heart);
 
   setTimeout(() => {
     heart.remove();
-  }, 4000);
+  }, 6000);
 }
 
-setInterval(createHeart, 500);
+setInterval(createHeart, 300);
