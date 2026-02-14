@@ -46,3 +46,9 @@ img {
   border-radius: 20px;
   box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
 }
+@keyframes floatUp {
+  to {
+    transform: translateY(-120vh);
+    opacity: 0;
+  }
+}
