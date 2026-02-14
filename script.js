@@ -1,8 +1,10 @@
 function sayYes() {
-  const popup = document.getElementById("popup");
   const song = document.getElementById("loveSong");
-
-  popup.classList.add("show");
   song.play();
+
+  setTimeout(() => {
+    window.location.href = "second.html";
+  }, 2000);
 }
+
 
